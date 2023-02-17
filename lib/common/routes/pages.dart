@@ -1,4 +1,5 @@
 
+import 'package:chatty/pages/frame/welcome/index.dart';
 import 'package:flutter/material.dart';
 import 'package:chatty/common/middlewares/middlewares.dart';
 
@@ -10,7 +11,7 @@ class AppPages {
   static const INITIAL = AppRoutes.INITIAL;
   static final RouteObserver<Route> observer = RouteObservers();
   static List<String> history = [];
- /*
+
   static final List<GetPage> routes = [
     // 免登陆
     GetPage(
@@ -18,6 +19,7 @@ class AppPages {
       page: () => WelcomePage(),
       binding: WelcomeBinding(),
     ),
+/*
     GetPage(
       name: AppRoutes.SIGN_IN,
       page: () => SignInPage(),
@@ -54,7 +56,8 @@ class AppPages {
     GetPage(name: AppRoutes.Photoimgview, page: () => PhotoImgViewPage(), binding: PhotoImgViewBinding()),
     GetPage(name: AppRoutes.VoiceCall, page: () => VoiceCallViewPage(), binding: VoiceCallViewBinding()),
     GetPage(name: AppRoutes.VideoCall, page: () => VideoCallPage(), binding: VideoCallBinding()),
-  ];*/
+    */
+  ];
 
 
 
