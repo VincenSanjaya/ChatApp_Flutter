@@ -1,10 +1,11 @@
-
 import 'package:chatty/pages/frame/welcome/index.dart';
 import 'package:flutter/material.dart';
 import 'package:chatty/common/middlewares/middlewares.dart';
 
 import 'package:get/get.dart';
 
+import '../../pages/frame/sign_in/index.dart';
+import '../../pages/message/index.dart';
 import 'routes.dart';
 
 class AppPages {
@@ -19,12 +20,12 @@ class AppPages {
       page: () => WelcomePage(),
       binding: WelcomeBinding(),
     ),
-/*
     GetPage(
       name: AppRoutes.SIGN_IN,
       page: () => SignInPage(),
       binding: SignInBinding(),
     ),
+  /*
 
     // 需要登录
     // GetPage(
@@ -45,9 +46,17 @@ class AppPages {
     // 首页
     GetPage(name: AppRoutes.Contact, page: () => ContactPage(), binding: ContactBinding()),
     //消息
-    GetPage(name: AppRoutes.Message, page: () => MessagePage(), binding: MessageBinding(),middlewares: [
-       RouteAuthMiddleware(priority: 1),
-     ],),
+    */
+    GetPage(
+      name: AppRoutes.Message,
+      page: () => MessagePage(),
+      binding: MessageBinding(),
+      middlewares: [
+        RouteAuthMiddleware(priority: 1),
+      ],
+    ),
+    /*
+
     //我的
     GetPage(name: AppRoutes.Profile, page: () => ProfilePage(), binding: ProfileBinding()),
     //聊天详情
@@ -58,10 +67,4 @@ class AppPages {
     GetPage(name: AppRoutes.VideoCall, page: () => VideoCallPage(), binding: VideoCallBinding()),
     */
   ];
-
-
-
-
-
-
 }

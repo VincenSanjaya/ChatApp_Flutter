@@ -19,7 +19,7 @@ class FirebaseMassagingHandler {
 
   FirebaseMassagingHandler._();
   static AndroidNotificationChannel channel_call = const AndroidNotificationChannel(
-    'com.dbestech.chatty.call', // id
+    'com.vincen.comsChat.call', // id
     'chatty_call', // title
     importance: Importance.max,
     enableLights: true,
@@ -27,7 +27,7 @@ class FirebaseMassagingHandler {
     sound: RawResourceAndroidNotificationSound('alert'),
   );
   static AndroidNotificationChannel channel_message = const AndroidNotificationChannel(
-    'com.dbestech.chatty.message', // id
+    'com.vincen.comsChat.message', // id
     'chatty_message', // title
     importance: Importance.defaultImportance,
     enableLights: true,
